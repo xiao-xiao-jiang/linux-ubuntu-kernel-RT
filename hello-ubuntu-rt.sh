@@ -1,7 +1,7 @@
 ###
  # @Author: JC
  # @Date: 2022-07-14 21:11:41
- # @LastEditTime: 2022-07-14 21:13:22
+ # @LastEditTime: 2022-07-14 21:38:14
  # @LastEditors: DESKTOP-S1QDRL5
  # @Description: In User Settings Edit
  # @FilePath: \sh\hello-ubuntu-rt.sh
@@ -11,7 +11,7 @@ sudo apt-get install libncurses5-dev libssl-dev build-essential openssl zlibc li
 
 wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/5.15/patch-5.15.49-rt47.patch.gz
 
-wget https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.15.49.tar.gz
+wget https://mirror.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.15.49.tar.gz
 
 tar -zxvf   linux-5.15.49.tar.gz
 gunzip patch-5.15.49-rt47.patch.gz
