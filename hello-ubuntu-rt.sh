@@ -1,7 +1,7 @@
 ###
  # @Author: JC
  # @Date: 2022-07-14 21:11:41
- # @LastEditTime: 2022-07-14 21:38:14
+ # @LastEditTime: 2022-07-14 22:03:39
  # @LastEditors: DESKTOP-S1QDRL5
  # @Description: In User Settings Edit
  # @FilePath: \sh\hello-ubuntu-rt.sh
@@ -22,11 +22,11 @@ patch -p1 < ../patch-5.15.49-rt47.patch
 
 wget https://github.com/xiao-xiao-jiang/linu-ubuntu-kernel-RT/blob/master/.config
 
-sudo make -j
+sudo make -j$(nproc)  
 
-sudo make modules
-sudo make bzImage
-sudo make modules_install -j
+sudo make modules -j$(nproc)
+sudo make bzImage -j$(nproc)
+sudo make modules_install -j$(nproc)
 sudo make install 
 sudo update-grub
 sudo reboot
