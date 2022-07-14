@@ -1,7 +1,7 @@
 ###
  # @Author: JC
  # @Date: 2022-07-14 21:11:41
- # @LastEditTime: 2022-07-14 21:11:54
+ # @LastEditTime: 2022-07-14 21:13:22
  # @LastEditors: DESKTOP-S1QDRL5
  # @Description: In User Settings Edit
  # @FilePath: \sh\hello-ubuntu-rt.sh
@@ -20,7 +20,7 @@ cd linux-5.15.49
 
 patch -p1 < ../patch-5.15.49-rt47.patch
 
-wget .config
+wget https://github.com/xiao-xiao-jiang/linu-ubuntu-kernel-RT/blob/master/.config
 
 sudo make -j
 
