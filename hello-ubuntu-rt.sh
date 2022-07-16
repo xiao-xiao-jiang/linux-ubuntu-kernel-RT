@@ -1,7 +1,7 @@
 ###
  # @Author: JC
  # @Date: 2022-07-14 21:11:41
- # @LastEditTime: 2022-07-16 16:57:15
+ # @LastEditTime: 2022-07-16 17:28:27
  # @LastEditors: DESKTOP-S1QDRL5
  # @Description: In User Settings Edit
  # @FilePath: \sh\hello-ubuntu-rt.sh
@@ -10,7 +10,7 @@
 # 使用方式： source ./hello-ubuntu-rt.sh
 #!/bin/bash
 
-su
+
 
 sudo apt-get install libncurses5-dev libssl-dev build-essential openssl zlibc libelf-dev minizip libidn11-dev libidn11 bison flex dwarves  libncurses-dev  zstd  -y
 
