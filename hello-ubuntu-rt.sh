@@ -48,3 +48,5 @@ sudo make install
 
 sudo update-grub
 
+sudo cp -r ../linux-5.15.49  /usr/src/
+sudo mv    /usr/src/linux-5.15.49       /usr/src/linux-headers-5.15.49-rt47
