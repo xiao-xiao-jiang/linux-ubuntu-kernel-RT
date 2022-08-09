@@ -16,7 +16,7 @@ sudo apt-get install libncurses5-dev libssl-dev build-essential openssl zlibc li
 
 git clone https://gitee.com/xiao-xiao-chao/linu-ubuntu-kernel-RT.git --depth=1  -b 18_04
 
-wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/5.15/patch-5.4.193-rt74.patch.gz
+wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/5.4/older/patch-5.4.129-rt61.patch.xz
 
 wget https://mirror.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.4.129.tar.gz
 
@@ -24,12 +24,12 @@ wget https://mirror.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.4.129.tar.gz
 
 tar -zxvf   linux-5.4.129.tar.gz
 
-gunzip patch-5.4.193-rt74.patch.gz
+gunzip patch-5.4.129-rt61.patch.gz
 
 
 cd linux-5.4.129
 
-patch -p1 < ../patch-5.4.193-rt74.patch
+patch -p1 < ../patch-5.4.129-rt61.patch
 
 
 cp ../linu-ubuntu-kernel-RT/.config   .config
@@ -47,5 +47,5 @@ sudo make install
 
 sudo update-grub
 
-sudo cp -r ../linux-5.4.129  /usr/src/linux-headers-5.4.129-rt74
+sudo cp -r ../linux-5.4.129  /usr/src/linux-headers-5.4.129-rt61
   
