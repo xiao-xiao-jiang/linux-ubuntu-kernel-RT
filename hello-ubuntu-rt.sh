@@ -7,10 +7,12 @@
  # @FilePath: \sh\hello-ubuntu-rt.sh
 ### 
 
+# 参考文档：https://github.com/UniversalRobots/Universal_Robots_Client_Library/blob/master/doc/real_time.md
 # 使用方式： source ./hello-ubuntu-rt.sh
+
+
+
 #!/bin/bash
-
-
 
 sudo apt-get install  cpufrequtils libncurses5-dev libssl-dev build-essential openssl zlibc libelf-dev minizip libidn11-dev libidn11 bison flex dwarves  libncurses-dev  zstd  -y
 
