@@ -14,7 +14,7 @@
 
 #!/bin/bash
 
-sudo apt-get install  cpufrequtils libncurses5-dev libssl-dev build-essential openssl zlibc libelf-dev minizip libidn11-dev libidn11 bison flex dwarves  libncurses-dev  zstd  -y
+sudo apt-get install   cpufrequtils libncurses5-dev libssl-dev build-essential openssl zlibc libelf-dev minizip libidn11-dev libidn11 bison flex dwarves  libncurses-dev  zstd  -y
 
 git clone https://gitee.com/xiao-xiao-chao/linu-ubuntu-kernel-RT.git --depth=1 
 
@@ -55,14 +55,14 @@ sudo groupadd realtime
 
 sudo usermod -aG realtime $(whoami)
 
-echo "
+sh -c 'echo "
 @realtime soft rtprio 99
 @realtime soft priority 99
 @realtime soft memlock 102400
 @realtime hard rtprio 99
 @realtime hard priority 99
 @realtime hard memlock 102400
-" >>/etc/security/limits.conf
+" >>/etc/security/limits.conf'
 
 sudo systemctl disable ondemand
 sudo systemctl enable cpufrequtils
